@@ -1,0 +1,13 @@
+pre-commit==3.0.4
+numpy==1.20.1
+pandas==1.4.1
+scikit-learn==1.0.2
+transformers==4.26.1
+datasets==2.9.0
+accelerate==0.16.0
+sentencepiece==0.1.97
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.13.1+cpu
+#pycryptodome==3.4.3
+chitra[serve]==0.2.0
+tornado==6.1
