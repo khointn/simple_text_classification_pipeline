@@ -15,55 +15,58 @@ Input:
 
 ## How to run
 
-1. Drop your datasets (train, valid) to the **simple_text_classification_pipeline/data** directory, or you can define path to your datasets later.
+1/ Drop your datasets (train, valid) to the `python simple_text_classification_pipeline/data` directory, or you can define path to your datasets later.
 
-2. Create Conda env
+2/ Create Conda env
 
 ```python
 conda create -n text_clf python=3.8.8
 ```
 
-3. Install necessary requirements
+3/ Install necessary requirements
 
 ```python
 python -m pip install -r requirements.txt
 ```
 
-4. Run command
+4/ Run command
 
 ```python
 cd src
 python main.py --label_name label1 label2 --text_name text --model_path your/pretrained/path
 ```
 
-**label1**, **label2** is your label names (default label_name = [label1, label2])
-**text** is your text column name (default text_name = text). 
-**your/pretrained/path** is the path to your (HuggingFace) pretrained model (default = microsoft/Multilingual-MiniLM-L12-H384).
+`python label1 label2` is your label names (default label_name = [label1, label2])
 
-Use case: If you want to define your data paths
+`python text` is your text column name (default text_name = text). 
+
+`python your/pretrained/path` is the path to your (HuggingFace) pretrained model (default = microsoft/Multilingual-MiniLM-L12-H384).
+
+**Use case: If you want to define your data paths**
 
 ```python
 python main.py /path/to/train /path/to/valid --label_name label1 label2 --text_name text --model_path your/pretrained/path
 ```
 
-**/path/to/train** default = simple_text_classification_pipeline/data/train.csv
-**/path/to/valid** default = simple_text_classification_pipeline/data/valid.csv
+`python /path/to/train`: default = simple_text_classification_pipeline/data/train.csv
 
-Use case: Run a trial with 10 samples before running with full batch
+`python /path/to/valid`: default = simple_text_classification_pipeline/data/valid.csv
+
+**Use case: Run a trial with 10 samples before running with full batch**
 
 ```python
 python main.py --label_name label1 label2 --text_name text --model_path your/pretrained/path --is_testing True
 ```
 
-**is_testing** default = False
+`python is_testing`: default = False
 
-Use case: Create API after training
+**Use case: Create API after training**
 
 ```python
 python main.py --label_name label1 label2 --text_name text --model_path your/pretrained/path --return_api True
 ```
 
-**return_api** default = False
+`python return_api`: default = False
 
 ## Functions
 
