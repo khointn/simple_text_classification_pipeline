@@ -42,7 +42,7 @@ python main.py --label_name label1 label2 --text_name text --model_path your/pre
 
 `python your/pretrained/path` is the path to your (HuggingFace) pretrained model (default = microsoft/Multilingual-MiniLM-L12-H384).
 
-
+<br /><br />
 **Use case: If you want to define your data paths**
 
 ```python
@@ -53,7 +53,7 @@ python main.py /path/to/train /path/to/valid --label_name label1 label2 --text_n
 
 `python /path/to/valid`: default = simple_text_classification_pipeline/data/valid.csv
 
-
+<br /><br />
 **Use case: Run a trial with 10 samples before running with full batch**
 
 ```python
@@ -62,7 +62,7 @@ python main.py --label_name label1 label2 --text_name text --model_path your/pre
 
 `python is_testing`: default = False
 
-
+<br /><br />
 **Use case: Create API after training**
 
 ```python
