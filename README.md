@@ -1,11 +1,10 @@
-# Simple Pipeline for Fine-tuning Text Classification Task
+# Simple Pipeline for Fine-tuning Text Classification Task (Draft 1)
 
 ## Introduction
 
 An end-to-end pipeline for multi-label text classification. This tool has 3 main functions:
 * Preprocesses your text data and fine-tune with pretrained Transformers. 
 * Provides API so that you can test your model.
-* Visualization report on your text data: length distribution, wordcloud (for choosing stopwords).
 
 Input:
 
@@ -78,7 +77,6 @@ As we run `python python main.py`, the code execute as follow:
 1. Preprocessing: config datatype, normalize texts, drop duplicate, remove non-latin texts, remove stopwords & punctuations.
 2. Fine-tuning: config training arguments and start fine-tuning.
 3. Return API link (if requested)
-4. Return visualization report (if requested)
 
 
 
